@@ -105,7 +105,7 @@ def test_model():
 def main():
     xml2txt('./data/zhwiki-latest-pages-articles.xml.bz2', './data/wiki_zh.txt')
     cut_words('./data/wiki_zh.txt', './data/wiki_zh_cut.txt')
-    # train_w2v_model('./data/wiki_zh_cut.txt', './w2v_model/wiki_zh_w2v_model.bin', './w2v_model/wiki_zh_w2v_vector.txt')
+    train_w2v_model('./data/wiki_zh_cut.txt', './w2v_model/wiki_zh_w2v_model.bin', './w2v_model/wiki_zh_w2v_vector.txt')
     test_model()
 
 
